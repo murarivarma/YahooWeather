@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="yahooWeatherAPI">
+    <head>
+        <title>Yahoo Weather App</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        
+        <script src="bower_components/angular/angular.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div ng-include="'app/weatherData/weatherData.html'"></div>
+        </div>
+        
+        <script src="app/app.js"></script>
+        <script src="app/weatherData/weatherData.js"></script>
+        <script src="app/weatherData/weatherDataCtrl.js"></script>
+        <script src="app/weatherData/weatherDataFactory.js"></script>
+    </body>
+</html>
